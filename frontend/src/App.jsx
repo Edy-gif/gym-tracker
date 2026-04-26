@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div style={{ maxWidth: '960px', margin: '0 auto', padding: '16px', fontFamily: 'sans-serif' }}>
+    <div style={{ maxWidth: '960px', margin: '0 auto', padding: '16px' }}>
       <h1>Gym Tracker</h1>
       <p>Track your workouts, exercises, and progress.</p>
 
