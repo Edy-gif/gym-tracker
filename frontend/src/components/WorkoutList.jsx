@@ -80,7 +80,7 @@ function WorkoutList({ refreshSignal }) {
       </div>
 
       {filtered.length === 0 ? (
-        <p>No workouts found.</p>
+        <p>No workouts found{search ? ` matching "${search}"` : ''}.</p>
       ) : (
         <table border="1" cellPadding="6" style={{ borderCollapse: 'collapse', width: '100%' }}>
           <thead>
