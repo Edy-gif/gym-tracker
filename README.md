@@ -57,17 +57,14 @@ cd frontend && npm install && cd ..
 
 ### 3. Configure environment variables
 
-```bash
-cd backend
-cp .env.example .env
-```
-
-Open `backend/.env` and fill in your MongoDB Atlas connection string:
+Create a file called `.env` inside the `backend/` folder and add these two lines:
 
 ```
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/gym-tracker?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxxx.mongodb.net/gym-tracker?retryWrites=true&w=majority
 PORT=5000
 ```
+
+Replace `<username>`, `<password>` and the cluster address with your real MongoDB Atlas values.
 
 > **How to get a MongoDB Atlas URI:**
 > 1. Go to [mongodb.com/atlas](https://www.mongodb.com/atlas) and create a free account.
